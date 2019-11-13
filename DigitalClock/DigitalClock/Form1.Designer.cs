@@ -30,6 +30,7 @@
         {
             this.hourMinuteLabel = new System.Windows.Forms.Label();
             this.secondLabel = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // hourMinuteLabel
@@ -52,12 +53,23 @@
             this.secondLabel.TabIndex = 3;
             this.secondLabel.Text = "47";
             // 
+            // dateLabel
+            // 
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.Color.White;
+            this.dateLabel.Location = new System.Drawing.Point(118, 187);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(449, 94);
+            this.dateLabel.TabIndex = 4;
+            this.dateLabel.Text = "Jan 03 2017";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(795, 383);
+            this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.secondLabel);
             this.Controls.Add(this.hourMinuteLabel);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Label hourMinuteLabel;
         private System.Windows.Forms.Label secondLabel;
+        private System.Windows.Forms.Label dateLabel;
     }
 }
 
