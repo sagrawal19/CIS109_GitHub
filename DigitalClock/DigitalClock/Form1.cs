@@ -17,6 +17,17 @@ namespace DigitalClock
             InitializeComponent();
         }
 
-      
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            hourMinuteLabel.Text = DateTime.Now.ToString("HH:mm");
+            secondLabel.Text = DateTime.Now.ToString("ss");
+            dateLabel.Text = DateTime.Now.ToString("MMM:dd:yyyy");
+            weekDayLabel.Text = DateTime.Now.ToString("dddd");
+        }
+
+        private void dateLabel_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
